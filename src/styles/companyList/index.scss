@@ -1,0 +1,73 @@
+.company-list-container {
+    margin-left: 328px;
+    width: 100%;
+    .company-item-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-bottom: 8px;
+        .company-item-container {
+            .company-body-continer {
+                border: 1px solid $borderColor;
+                padding: 1rem;
+                .company-logo {
+                    width: 100%;
+                    border: 1px solid $borderColor;
+                }
+                .company-title {
+                    color: $borderColor;
+                    @include FAIC;
+                    img {
+                        margin: 0 8px;
+                        object-fit: cover;
+                        width: 22px;
+                        height: 15px;
+                    }
+                }
+                .work-items {
+                    padding-left: 1rem;
+                    margin-top: 1.5rem;
+                    display: grid;
+                    grid-template-columns: 50% 50%;
+                    li {
+                        margin: 4px 0;
+                    }
+                }
+                .FJCBAIC {
+                    span {
+                        @include FAIC;
+                    }
+                    svg {
+                        stroke-width: 1px;
+                    }
+                }
+            }
+            .company-footer-continer {
+                border: 1px solid $borderColor;
+                border-top: none;
+                padding: 8px 1rem;
+                b {
+                    margin-right: 8px;
+                }
+            }
+        }
+        .company-review-container {
+            border: 1px solid $borderColor;
+            border-left: none;
+            @include FJCCAIC;
+            flex-direction: column;
+            .feedback-star {
+                margin-bottom: 1rem;
+            }
+            .write-review-button {
+                @include FJCCAIC;
+                padding: 0.5rem 1rem;
+                border-radius: 20000px;
+                border: 2px solid $borderColor;
+                svg {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}

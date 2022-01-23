@@ -1,0 +1,14 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "tools";
+@import "tools/mixin";
+
+.company-site-container {
+    display: grid;
+    grid-template-columns: calc(100% - 328px);
+    padding: 20px;
+    height: 100vh;
+    @import "filter";
+    @import "companyList";
+}

@@ -1,0 +1,1 @@
+export const JOB_LIST_UPDATE = 'JOB_LIST_UPDATE';
